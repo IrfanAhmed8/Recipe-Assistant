@@ -1,3 +1,84 @@
-body{
-    color: brown;
-}
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fff4e6, #ffe6f0);
+      color: #333;
+    }
+
+    header {
+      background-color: #ff704d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .intro h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 20px;
+    }
+
+    .feature-card {
+      background-color: white;
+      border-radius: 12px;
+      margin: 15px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .feature-card h3 {
+      color: #ff704d;
+      margin-bottom: 10px;
+    }
+
+    .mic-button {
+      display: block;
+      margin: 40px auto;
+      background-color: #ff704d;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .mic-button:hover {
+      background-color: #e65c3a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background-color: #ffe6e6;
+      margin-top: 40px;
+    }

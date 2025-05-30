@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>now it is rendering the html page </h1>
+
+<header>
+  Recipe Assistant
+</header>
+
+<section class="intro">
+  <h2>Your Smart Cooking Companion</h2>
+  <p>
+    Tap on a dish or speak into your mic, and let Recipe Assistant help you create amazing meals effortlessly. Whether you're craving comfort food or trying something new, we’re here to guide you step-by-step.
+  </p>
+</section>
+
+<section class="features">
+  <div class="feature-card">
+    <h3>🎤 Voice-Activated Recipes</h3>
+    <p>Use your voice to find and start cooking any dish you want – hands-free and hassle-free.</p>
+  </div>
+  <div class="feature-card" onclick="location.href='/categroy'">
+    <h3>📚 Explore Categories</h3>
+    <p>From breakfast to desserts, explore thousands of recipes sorted into easy categories.</p>
+  </div>
+  <div class="feature-card">
+    <h3>⭐ Personalized Suggestions</h3>
+    <p>Get smart suggestions based on your cooking habits and preferences.</p>
+  </div>
+  <div class="feature-card">
+    <h3>👨‍🍳 For Every Skill Level</h3>
+    <p>Easy to follow recipes whether you're a beginner or a culinary expert.</p>
+  </div>
+</section>
+
+<button class="mic-button">🎙️ Start Cooking with Voice</button>
+
+<footer>
+  &copy; 2025 Recipe Assistant. All rights reserved.
+</footer>
+
 </body>
 </html>

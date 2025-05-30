@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Categories</title>
+</head>
+<body>
+  <h2>Search Recipes</h2>
+  <form method="POST" action="/categroy">
+    <label for="query">Query:</label>
+    <input type="text" id="query" name="query" placeholder="e.g. pasta"><br>
+
+    <label for="cuisine">Cuisine:</label>
+    <input type="text" id="cuisine" name="cuisine" placeholder="e.g. Italian"><br>
+
+    <button type="submit">Search</button>
+  </form>
+
+  <h3>Results:</h3>
+  <div id="results">
+    {% if recipes %}
+      <ul>
+        {% for recipe in recipes %}
+          <li>{{ recipe.title }}<br>
+            {{recipe.image}}<br>
+            {{recipe.ingredient}}
+
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No recipes found or search to begin.</p>
+    {% endif %}
+  </div>
+</body>
+</html>
